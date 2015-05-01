@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>apitest page.</h1>
+	
+	<table>
+	<tr>
+		<td>id</td>
+		<td>type</td>
+		<td>brand</td>
+		<td>model</td>
+		<td>image</td>
+	<tr>
+	{% for result in results %}
+		<tr>
+			<td>{{ result.id }} </td>
+			<td>{{ result.type }}</td>
+			<td>{{ result.brand }}</td>
+			<td>{{ result.model }}</td>
+			<td><img src="{{ result.image }}" style="max-width:128px;max-height:128px"></td>
+		</tr>
+	{% endfor %}
+	</table>
+	{{ dump(results) }}
+{% endblock %}

@@ -1,0 +1,12 @@
+guzzle:
+    base_url: "https://api.theprintful.com"
+
+    # custom headers
+    headers:
+        Accept: "Authorization: Basic awadc882-62it-ntz6:x29q-30oxgdxkco4k"
+
+    # plugin settings
+    #plugin:
+    #   wsse:
+    #      username: acme
+    #     password: pa55w0rd
